@@ -1,0 +1,9 @@
+controllers:
+    host: 'artpeintre.fr'
+    resource: ../../src/Controller/
+    type: annotation
+
+api_controllers:
+    host: 'api.artpeintre.fr'
+    resource: ../../src/ApiController/
+    type: annotation
