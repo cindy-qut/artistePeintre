@@ -4,7 +4,15 @@
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
-    locale: 'en'
+    locale: 'fr'
+    app_locales: fr|en
+
+a2lix_translation_form:
+    locale_provider: default
+    locales: [en, fr]
+    default_locale: fr
+    required_locales: [en]
+    templating: "@A2lixTranslationForm/bootstrap_4_layout.html.twig"
 
 services:
     # default configuration for services in *this* file

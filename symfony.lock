@@ -1,4 +1,13 @@
 {
+    "a2lix/auto-form-bundle": {
+        "version": "0.1"
+    },
+    "a2lix/translation-form-bundle": {
+        "version": "3.0.2"
+    },
+    "behat/transliterator": {
+        "version": "v1.2.0"
+    },
     "doctrine/annotations": {
         "version": "1.0",
         "recipe": {
@@ -113,6 +122,9 @@
     },
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
+    },
+    "knplabs/doctrine-behaviors": {
+        "version": "1.6.0"
     },
     "lcobucci/jwt": {
         "version": "3.2.5"
