@@ -15,6 +15,16 @@
                 <th>Tarif</th>
                 <td>{{ oeuvre.tarif }}</td>
             </tr>
+            <tr>
+                <th>Taille</th>
+                <td>{{ oeuvre.taille.dimensions }}</td>
+            </tr>
+            <tr>
+                <th>Image</th>
+                <td>
+                    {% if oeuvre.image %}<img src="{{ asset(oeuvre.image.imagePath)}}" height="100px" width="100px">{% endif %}
+                </td>
+            </tr>
         </tbody>
     </table>
 

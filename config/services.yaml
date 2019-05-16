@@ -6,6 +6,8 @@
 parameters:
     locale: 'fr'
     app_locales: fr|en
+    image_abs_path: '%kernel.project_dir%/public/uploads/images'
+    image_path: 'uploads/images'
 
 a2lix_translation_form:
     locale_provider: default

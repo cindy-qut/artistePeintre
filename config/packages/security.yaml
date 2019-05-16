@@ -49,6 +49,6 @@ security:
         - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/type, role: ROLE_USER, host: api\.artpeintre\.fr}
-        - { path: ^/type, role: ROLE_USER, host: artpeintre\.fr}
+        #- { path: ^/type, role: ROLE_USER, host: api\.artpeintre\.fr}
+        #- { path: ^/type, role: ROLE_USER, host: artpeintre\.fr}
         #- { path: ^/admin, role: ROLE_ADMIN }
