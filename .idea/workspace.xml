@@ -211,9 +211,10 @@
       <path value="$PROJECT_DIR$/vendor/behat/transliterator" />
       <path value="$PROJECT_DIR$/vendor/a2lix/auto-form-bundle" />
       <path value="$PROJECT_DIR$/vendor/a2lix/translation-form-bundle" />
+      <path value="$PROJECT_DIR$/vendor/nelmio/cors-bundle" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
     <option name="y" value="2" />
     <option name="width" value="1316" />
@@ -323,17 +324,19 @@
       <workItem from="1557768518350" duration="3127000" />
       <workItem from="1557902927885" duration="4208000" />
       <workItem from="1557940123589" duration="741000" />
+      <workItem from="1557988484397" duration="593000" />
+      <workItem from="1558075061941" duration="597000" />
+      <workItem from="1558085947098" duration="580000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77793000" />
+    <option name="totallyTimeSpent" value="79563000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="2" width="1316" height="773" extended-state="1" />
-    <editor active="true" />
+    <frame x="-7" y="2" width="1316" height="773" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24920382" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2611465" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -517,9 +520,7 @@
     <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190513150644.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190513160844.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190513160844.php" />
     <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190513154510.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
