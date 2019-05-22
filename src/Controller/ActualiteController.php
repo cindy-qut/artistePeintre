@@ -22,6 +22,7 @@ class ActualiteController extends AbstractController
     {
         return $this->render('actualite/index.html.twig', [
             'actualites' => $actualiteRepository->findAll(),
+            'navactualite' => true
         ]);
     }
 

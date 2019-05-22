@@ -22,6 +22,7 @@ class LangueController extends AbstractController
     {
         return $this->render('langue/index.html.twig', [
             'langues' => $langueRepository->findAll(),
+            'navlangue' => true
         ]);
     }
 

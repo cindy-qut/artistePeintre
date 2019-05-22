@@ -1,7 +1,12 @@
 controllers:
-    host: 'artpeintre.fr'
+    host: 'admin.artpeintre.fr'
     resource: ../../src/Controller/
     type: annotation
+
+api_auth_login:
+    host: 'api.artpeintre.fr'
+    path: /login_check
+    methods: [POST]
 
 api_controllers:
     host: 'api.artpeintre.fr'

@@ -6,3 +6,45 @@
 #    controller: App\Controller\ContactController::index
 #    requirements:
 #        _locale: en|fr
+
+#accueil_homepage:
+#    path:
+#    defauts: {_templates: default:index.html.twig}
+
+actualite_homepage:
+    path: /actualite
+    defaults: {_templates: actualite:index.html.twig}
+
+article_homepage:
+    path: /article
+    defaults: {_templates: article:index.html.twig}
+
+contact_homepage:
+    path: /contact
+    defaults: {_templates: contact:index.html.twig}
+
+image_homepage:
+    path: /images
+    defaults: {_templates: images:index.html.twig}
+
+langue_homepage:
+    path: /langue
+    defaults: {_templates: langue:index.html.twig}
+
+oeuvre_homepage:
+    path: /oeuvres
+    defaults: {_templates: oeuvres:index.html.twig}
+
+presentation_homepage:
+    path: /presentation
+    defaults: {_templates: presentation:index.html.twig}
+
+taille_homepage:
+    path: /taille
+    defaults: {_templates: taille:index.html.twig}
+
+type_homepage:
+    path: /types
+    defaults: {_templates: types:index.html.twig}
+
+

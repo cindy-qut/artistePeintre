@@ -23,6 +23,7 @@ class TypesController extends AbstractController
     {
         return $this->render('types/index.html.twig', [
             'types' => $typesRepository->findAll(),
+            'navtype' => true
         ]);
     }
 

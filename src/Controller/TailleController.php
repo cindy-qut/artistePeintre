@@ -22,6 +22,7 @@ class TailleController extends AbstractController
     {
         return $this->render('taille/index.html.twig', [
             'tailles' => $tailleRepository->findAll(),
+            'navtaille' => true
         ]);
     }
 

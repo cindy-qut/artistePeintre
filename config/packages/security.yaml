@@ -49,6 +49,22 @@ security:
         - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
-        #- { path: ^/type, role: ROLE_USER, host: api\.artpeintre\.fr}
-        #- { path: ^/type, role: ROLE_USER, host: artpeintre\.fr}
-        #- { path: ^/admin, role: ROLE_ADMIN }
+        - { path: ^/admin, role: ROLE_ADMIN }
+        - { path: ^/type, role: ROLE_ADMIN, host: api\.artpeintre\.fr}
+        - { path: ^/type, role: ROLE_ADMIN, host: artpeintre\.fr}
+        - { path: ^/taille, role: ROLE_ADMIN, host: api\.artpeintre\.fr}
+        - { path: ^/taille, role: ROLE_ADMIN, host: artpeintre\.fr}
+        - { path: ^/actualite, role: ROLE_ADMIN, host: api\.artpeintre\.fr}
+        - { path: ^/actualite, role: ROLE_ADMIN, host: artpeintre\.fr}
+        - { path: ^/article, role: ROLE_ADMIN, host: api\.artpeintre\.fr}
+        - { path: ^/article, role: ROLE_ADMIN, host: artpeintre\.fr}
+        - { path: ^/contact, role: ROLE_ADMIN, host: artpeintre\.fr}
+        - { path: ^/contact, role: ROLE_ADMIN, host: api\.artpeintre\.fr}
+        - { path: ^/images, role: ROLE_ADMIN, host: artpeintre\.fr}
+        - { path: ^/images, role: ROLE_ADMIN, host: api\.artpeintre\.fr}
+        - { path: ^/langue, role: ROLE_ADMIN, host: artpeintre\.fr}
+        - { path: ^/langue, role: ROLE_ADMIN, host: api\.artpeintre\.fr}
+        - { path: ^/oeuvres, role: ROLE_ADMIN, host: artpeintre\.fr}
+        - { path: ^/oeuvres, role: ROLE_ADMIN, host: api\.artpeintre\.fr}
+        - { path: ^/presentation, role: ROLE_ADMIN, host: artpeintre\.fr}
+        - { path: ^/presentation, role: ROLE_ADMIN, host: api\.artpeintre\.fr}

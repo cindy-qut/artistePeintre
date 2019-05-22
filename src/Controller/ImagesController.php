@@ -23,6 +23,7 @@ class ImagesController extends AbstractController
     {
         return $this->render('images/index.html.twig', [
             'images' => $imagesRepository->findAll(),
+            'navimage' => true
         ]);
     }
 

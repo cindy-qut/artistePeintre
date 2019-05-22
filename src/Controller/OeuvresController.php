@@ -24,6 +24,7 @@ class OeuvresController extends AbstractController
     {
         return $this->render('oeuvres/index.html.twig', [
             'oeuvres' => $oeuvresRepository->findAll(),
+            'navoeuvre' => true
         ]);
     }
 
