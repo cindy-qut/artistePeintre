@@ -1,36 +1,59 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Oeuvres{% endblock %}
+{% block title %}
+   Oeuvres
+{% endblock %}
 
 {% block body %}
-    <h1>Oeuvres</h1>
+    <div class="container">
+       <div class="row">
+           <h1>Oeuvres</h1>
+       </div>
+        <div class="container table-responsive" style="text-align: center" >
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr class="row>" >
+                        <th></th>
+                        <th>Id</th>
+                        <th>Tarif</th>
+                        <th>Taille</th>
+                        <th>Image</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">
+                            <td>{{ oeuvre.id }}</td>
+                            <td>{{ oeuvre.tarif }}</td>
+                            <td>{{ oeuvre.taille.dimensions }}</td>
+                            <td>
+                                {% if oeuvre.image %}
+                                    <img src="{{ asset(oeuvre.image.imagePath)}}" height="200px" width="200px">
+                                {% endif %}
+                            </td>
+                            <td class="row">
+                                <a href="{{ path('oeuvres_edit', {'id': oeuvre.id}) }}">
+                                    <button class="btn btn-mg btn-info actions" type="button">
+                                        <i class="fas fa-edit"></i>
+                                        <span>Modifier</span>
+                                    </button>
+                                </a>
+                                <div >
+                                    {{ include('oeuvres/_delete_form.html.twig') }}
+                                </div>
+                            </td>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <a href="{{ path('oeuvres_index') }}">
+            <button class="btn  btn-secondary btn-mg boutonS" type="button">
+                <i class="far fa-arrow-alt-circle-left"></i>
+                <span>Retour à la liste</span>
+            </button>
+        </a>
+    </div>
 
-    <table class="table">
-        <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ oeuvre.id }}</td>
-            </tr>
-            <tr>
-                <th>Tarif</th>
-                <td>{{ oeuvre.tarif }}</td>
-            </tr>
-            <tr>
-                <th>Taille</th>
-                <td>{{ oeuvre.taille.dimensions }}</td>
-            </tr>
-            <tr>
-                <th>Image</th>
-                <td>
-                    {% if oeuvre.image %}<img src="{{ asset(oeuvre.image.imagePath)}}" height="100px" width="100px">{% endif %}
-                </td>
-            </tr>
-        </tbody>
-    </table>
-
-    <a href="{{ path('oeuvres_index') }}">back to list</a>
-
-    <a href="{{ path('oeuvres_edit', {'id': oeuvre.id}) }}">edit</a>
-
-    {{ include('oeuvres/_delete_form.html.twig') }}
 {% endblock %}

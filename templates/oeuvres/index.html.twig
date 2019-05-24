@@ -23,25 +23,41 @@
                     <td>{{ oeuvre.id }}</td>
                     <td>{{ oeuvre.type.id }}</td>
                     <td>
-                        {% if oeuvre.image %}<img src="{{ asset(oeuvre.image.imagePath)}}" height="100px" width="100px">{% endif %}
+                        {% if oeuvre.image %}
+                            <img src="{{ asset(oeuvre.image.imagePath)}}" height="100px" width="100px">
+                        {% endif %}
                     </td>
                     <td>{{ oeuvre.taille.dimensions }}</td>
 
                     <td>{{ oeuvre.tarif }}</td>
 
                     <td>
-                        <a href="{{ path('oeuvres_show', {'id': oeuvre.id}) }}">show</a>
-                        <a href="{{ path('oeuvres_edit', {'id': oeuvre.id}) }}">edit</a>
+                        <a href="{{ path('oeuvres_edit', {'id': oeuvre.id}) }}">
+                            <button class="btn btn-mg btn-light actions" type="button">
+                                <i class="fas fa-edit"></i>
+                                <span>Modifier</span>
+                            </button>
+                        </a>
+                        <a href="{{ path('oeuvres_show', {'id': oeuvre.id}) }}">
+                            <button class="btn btn-mg btn-light actions" type="button">
+                                <i class="fa fa-eye"></i>
+                                <span>show</span>
+                            </button></a>
+
                     </td>
                 </tr>
-            {% else %}
+            {% else %}boutonS
                 <tr>
                     <td colspan="3">no records found</td>
                 </tr>
             {% endfor %}
             </tbody>
         </table>
-
-        <a href="{{ path('oeuvres_new') }}">Create new</a>
+        <a href="{{ path('oeuvres_new') }}">
+            <button class="btn  btn-success btn-mg boutonS" type="button">
+                <i class="fas fa-folder-plus"></i>
+                <span>Ajouter une oeuvre</span>
+            </button>
+        </a>
     </div>
 {% endblock %}

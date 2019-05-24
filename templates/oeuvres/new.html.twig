@@ -1,11 +1,21 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}New Oeuvres{% endblock %}
+{% block title %}Oeuvres{% endblock %}
 
 {% block body %}
-    <h1>Create new Oeuvres</h1>
+    <div class="container">
+    <div>
+        <h1>Création d'une nouvelle oeuvre</h1>
+    </div>
+        <div>
+            {{ include('oeuvres/_form.html.twig') }}
+        </div>
 
-    {{ include('oeuvres/_form.html.twig') }}
-
-    <a href="{{ path('oeuvres_index') }}">back to list</a>
+        <a href="{{ path('oeuvres_index') }}">
+            <button class="btn  btn-secondary btn-mg" type="button">
+                <i class="far fa-arrow-alt-circle-left"></i>
+                <span>Retour à la liste</span>
+            </button>
+        </a>
+    </div>
 {% endblock %}

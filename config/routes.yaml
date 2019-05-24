@@ -11,6 +11,10 @@
 #    path:
 #    defauts: {_templates: default:index.html.twig}
 
+accueil_homepage:
+    path: /accueil
+    defaults: {_templates: accueil:index.html.twig}
+
 actualite_homepage:
     path: /actualite
     defaults: {_templates: actualite:index.html.twig}

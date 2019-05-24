@@ -3,11 +3,28 @@
 {% block title %}Edit Oeuvres{% endblock %}
 
 {% block body %}
-    <h1>Edit Oeuvres</h1>
-    {% if oeuvre.image %}<img src="{{ asset(oeuvre.image.imagePath)}}" height="100px" width="100px">{% endif %}
-    {{ include('oeuvres/_form.html.twig', {'button_label': 'Update'}) }}
-
-    <a href="{{ path('oeuvres_index') }}">back to list</a>
-
-    {{ include('oeuvres/_delete_form.html.twig') }}
+    <div class="container">
+        <div class="row">
+            <h1>Edit Oeuvres</h1>
+        </div>
+        <div class="row">
+            {% if oeuvre.image %}<img src="{{ asset(oeuvre.image.imagePath)}}" height="100px" width="100px">{% endif %}
+        </div>
+        <div class="row">
+            <div class="col-12">
+                {{ include('oeuvres/_form.html.twig', {'button_label': 'Enregistrer'}) }}
+            </div>
+            <div class="col-12">
+                {{ include('oeuvres/_delete_form.html.twig') }}
+            </div>
+            <div class="col-12">
+                <a href="{{ path('oeuvres_index') }}">
+                    <button class="btn  btn-secondary btn-mg" type="button">
+                        <i class="far fa-arrow-alt-circle-left"></i>
+                        <span>Retour à la liste</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
 {% endblock %}

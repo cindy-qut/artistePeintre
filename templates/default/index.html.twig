@@ -7,28 +7,13 @@
 
 
 {% block body %}
-
 <div class="container-fluid">
 
-    {% if is_granted("IS_AUTHENTICATED_FULLY") %}
-        <h3> Bienvenue sur ton site {% if is_granted("ROLE_ADMIN") %} Nathalie {% endif %}</h3>
-        <h6>
-            <a href="{{ path("fos_user_security_logout") }}">Déconnexion</a>
-        </h6>
-    {% else %}
-        <h1>Welcome</h1>
-        <h6>
-            <a href="{{ path("fos_user_security_login") }}">Connexion</a>
-        </h6>
-    {% endif %}
 </div>
 
 {% endblock %}
 
 
-
-{% block stylesheets %}
-{% endblock %}
 
 
 

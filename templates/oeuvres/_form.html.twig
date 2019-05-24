@@ -1,4 +1,14 @@
 {{ form_start(form) }}
-    {{ form_widget(form) }}
-    <button class="btn">{{ button_label|default('Save') }}</button>
+    <div class="container-fluid">
+        <div class="row">
+            {{ form_widget(form) }}
+        </div>
+        <button class="btn btn-success btn-mg ">
+            <i class="far fa-save"></i>
+            <span>{{ button_label|default('Save') }}</span>
+
+        </button>
+    </div>
 {{ form_end(form) }}
+
+
